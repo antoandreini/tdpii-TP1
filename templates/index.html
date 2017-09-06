@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taller de proyecto II</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" />
+</head>
+<body>
+	<div class="jumbotron text-center">
+	<h1>Taller de Proyecto II</h1>
+	<p>Practica 1</p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+		    <div class="col-sm-3 text-center">
+		        <h5>Temperatura</h5>
+		        <h2><span id="temp">16</span>°C</h2>
+		    </div>
+		    <div class="col-sm-3 text-center">
+		        <h5>Humedad</h5>
+		        <h2><span id="hum">88</span>%</h2>
+		    </div>
+		    <div class="col-sm-3 text-center">
+		        <h5>Presión</h5>
+		        <h2><span id="pres">1000</span> Hpas</h2>
+		    </div>
+		    <div class="col-sm-3 text-center">
+		        <h5>Viento</h5>
+		        <h2><span id="viento">22</span> Km/h</h2>
+		    </div>
+		</div>
+		<h2 class="mb-4">Cambiar frecuencia de muestreo</h2>
+		<form class="form-inline" id="frec-form" method="POST">
+			<label class="mr-sm-2" for="frecSelect">Cada</label>
+			<select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="frecuencia" id="frecSelect">
+			    <option value="1">1 segundo</option>
+			    <option value="2">2 segundos</option>
+			    <option value="5">5 segundos</option>
+			    <option value="10" selected>10 segundos</option>
+			    <option value="30">30 segundos</option>
+			    <option value="60">60 segundos</option>
+			</select>	
+	  		<button type="submit" class="btn btn-primary">Cambiar</button>
+		</form>
+	</div>
+    <!-- JQuery -->
+    <script src="{{url_for('static', filename='jquery/jquery-3.2.1.min.js')}}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{{url_for('static', filename='bootstrap/js/popper.min.js')}}"></script>
+	<script src="{{url_for('static', filename='bootstrap/js/bootstrap.min.js')}}"></script>
+	<script src="{{url_for('static', filename='app.js')}}"></script>
+</body>
+</html>
