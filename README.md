@@ -5,6 +5,8 @@ Integrantes:
 - Antonella Andreini, 822/9
 - Augusto Bonifacio, 751/1
 - Brian Flores, 795/4
+
+El informe esta entre los archivos
 ## Requisitos
 
 - Python 2.7
@@ -50,9 +52,9 @@ Se usa una base de datos para evitar los problemas de concurrencia que pueden ex
 
 ### Server.py
 
-- **/** devulve el archivo index.html para que pueda ser interpretado por el navegador.
+- **/** devuelve el archivo index.html para que pueda ser interpretado por el navegador.
 
-- **/api/clima** devulve la ultima medicion hecha desde la base de datos,
+- **/api/clima** devuelve la ultima medicion hecha desde la base de datos,
 
 - **/api/frecuencia** [POST] hace un update sobre la tabla *Configuracion*.  
 
